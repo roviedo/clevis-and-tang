@@ -5,5 +5,12 @@
 
 
 ### Steps to run this project
-    sudo docker build -t sample-image .
-    sudo docker run -it sample-image bash
+    cd clevis
+    sudo docker build -t clevis-client .
+    sudo docker run -it clevis-client bash
+
+
+    cd tang
+    sudo docker build -t tang-server --no-cache .
+    sudo docker run -it tang-server
+
